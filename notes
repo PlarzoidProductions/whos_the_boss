@@ -1,0 +1,4 @@
+list isn't clearing the residual data correctly - bankruptcy should clear once done, but alas, the browser still keeps it set.
+add function to randomizer class for getting all free elements (will free casters function still work for this?  rename?
+ensure all surprises refresh as desired
+ensure the prixzes do in fact come up on the spinner
