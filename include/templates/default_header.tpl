@@ -4,14 +4,13 @@
 <title>Who's the Boss?</title>
 <LINK REL="StyleSheet" TYPE="text/css" HREF="include/mystyle.css" />
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<?if($reload){?><meta http-equiv="refresh" content="5"/><?}?>
+<?php if($reload){?><meta http-equiv="refresh" content="5"/><?php }?>
 </head>
 
 <body>
-<form action="<?=$form_action?>" method="post">
-	<table width="100%"><tr><td>[<a href="index.php">Spinner</a>] | [<a href="listCasters.php">Control Panel</a>]</td></tr></table>
-        <table width="80%" align="center">
-                <input type="hidden" name="autospin" value="<?=$reload?>">
-                <tr align="center"><td><h1>Warcaster Randomizer</h1></tr></td>
-                <tr><td><hr/></td></tr>
-        </table>
+<form action="<?php echo $form_action?>" method="post">
+	<table width="80%" align="center">
+         <input type="hidden" name="autospin" value="<?php echo $reload?>">
+         <tr align="center"><td><h1>Warcaster Randomizer</h1></tr></td>
+         <tr><td><hr/></td></tr>
+    </table>

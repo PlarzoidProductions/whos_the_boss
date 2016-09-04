@@ -28,6 +28,8 @@ $rc->purgeSelf();
 
 foreach($casters as $c){
 
+var_dump($c);
+
   $rc->insertCaster($c[0], $c[1], $c[2]);
 
 }

@@ -3,7 +3,7 @@
 <div class="content-wrapper">
 	<div class="content-header"><div class="title-plaque"></div></div>
 	<div class="content-body">
-		<?if(is_array($casters[$chosen])){?>
+		<?php if(is_array($casters[$chosen])){?>
 		<table align="center" width="500px">
 		        <tr><td><input type="hidden" name="caster_id" value="<?=$casters[$chosen][id]?>"></td></tr>
 		        <tr>
@@ -23,11 +23,11 @@
                 		<td class="left"><?=$page->displayVar("new")?></td>
 		        </tr>
 		</table>
-		<?} else {?>
+		<?php } else {?>
 		<table align="center" width="500px">
 			<tr><td align="center"><h1>No more 'casters!</h1></td></tr>
 		</table>
-		<?}?>
+		<?php }?>
 
 	</div>
 	<div class="content-footer"></div>

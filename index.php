@@ -24,7 +24,7 @@ $page = new Page();
 
 $page->register("keep", "submit", array("value"=>"Keep This Caster", "use_post"=>1));
 $page->register("new", "submit", array("value"=>"Spin Again", "use_post"=>1));
-$page->register("spinner", "submit", array("value"=>"    ", "use_post"=>1, "style"=>"spinner"));
+$page->register("spinner", "submit", array("value"=>"    ", "use_post"=>1, "class"=>"spinner"));
 $page->register("autospin", "hidden", array("use_post"=>1));
 
 $rc = new Casters();
@@ -35,7 +35,8 @@ if($page->submitIsSet("keep")){
 	$rc->setCasterInUse($page->getVar("caster_id")+0); 
 } 
 
-if($page->submitIsSet("spinner") || ($page->getVar("autospin") == "true")){
+if(isset($_REQUEST["spinner"]) || ($page->getVar("autospin") == "true")){
+
 	$casters = $rc->getFreeCasters();
 	if(is_array($casters)){
 		$chosen=array_rand($casters);

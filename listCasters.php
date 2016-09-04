@@ -90,7 +90,7 @@ if($page->submitIsSet("apply_changes")){
 	if(is_array($surprises)){
         	foreach($surprises as $su){
         	        $page->register("checkbox".$su[id], "checkbox", array("on_text"=>"In Use", "off_text"=>"Free",
-                	                                                       "default_val"=>$su[used], "use_post"=>1));
+                	                                                       "default_val"=>($su[used] ? 1 : 0), "use_post"=>1));
         	}
 	}
 

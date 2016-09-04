@@ -3,7 +3,7 @@
 <div class="content-wrapper">
 	<div class="content-header"><div class="title-plaque"></div></div>
 	<div class="content-body">
-		<?=$page->displayVar("spinner")?>	
+		<input type="submit" name="spinner" value="    " class="spinner">
 	</div>
 	<div class="content-footer"></div>
 </div>
